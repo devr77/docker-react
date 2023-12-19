@@ -1,4 +1,6 @@
 sudo: required
+language: generic
+
 services:
   - docker
 
@@ -18,5 +20,5 @@ deploy:
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
-  secret_access_key:
-    secure: "$AWS_SECRET_KEY"                                    # make sure you put double quote
+  secret_access_key: "$AWS_SECRET_KEY"
+                                      # make sure you put double quote
